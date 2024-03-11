@@ -57,7 +57,7 @@ export default{
     header{
         padding:10px 0;
 
-        background-color: $primaryColor;
+        background-color: $secondaryColor;
         color:white;
 
         font-size: 10px;

@@ -1,11 +1,13 @@
 <script >
 
 import AppHeader from './components/AppHeader.vue';
+import AppNav from './components/AppNavbar.vue';
 
 export default{
 
   components:{
-    AppHeader
+    AppHeader,
+    AppNav
   },
 
   Data(){
@@ -21,9 +23,12 @@ export default{
 <template>
 
   <AppHeader></AppHeader>
+
+  <AppNav></AppNav>
   
 </template>
 
-<style>
+<style lang="scss">
+@use './style/general.scss' as *;
 
 </style>

@@ -1,3 +1,5 @@
+
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -22,6 +24,24 @@
 .container{
   max-width: 1400px;
   margin:0 auto;
+}
+
+.btn{
+  display: inline-block;
+  padding:10px 15px;
+
+  border-radius: 0 22px 0 22px;
+  cursor:pointer;
+  user-select: none;
+
+  text-transform: uppercase;
+}
+
+
+.btn-primary{
+  background-color: #ef9e03;
+  color:white;
+  font-weight: bold;
 }
 
 
