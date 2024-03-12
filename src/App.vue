@@ -3,13 +3,15 @@
 import AppHeader from './components/AppHeader.vue';
 import AppNav from './components/AppNavbar.vue';
 import AppSlider from './components/AppSlider.vue';
+import AppExample from './components/AppExample.vue';
 
 export default{
 
   components:{
     AppHeader,
     AppNav,
-    AppSlider
+    AppSlider,
+    AppExample
   },
 
   Data(){
@@ -29,6 +31,8 @@ export default{
   <AppNav></AppNav>
 
   <AppSlider></AppSlider>
+
+  <AppExample></AppExample>
   
 </template>
 

@@ -63,7 +63,7 @@ export default{
 <template>
 
    <nav>
-        <div class="container">
+        <div class="my_container">
             
             <div id="nav-inner">
 
@@ -88,7 +88,7 @@ export default{
                         carrfello
                     </div>
                     <div class="order">
-                        <a class="btn btn-primary">order now</a>
+                        <a class="my_btn my_btn_primary">order now</a>
                     </div>
                 </div>
 

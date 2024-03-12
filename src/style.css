@@ -21,12 +21,12 @@
   box-sizing: border-box;
 }
 
-.container{
+.my_container{
   max-width: 1400px;
   margin:0 auto;
 }
 
-.btn{
+.my_btn{
   display: inline-block;
   padding:10px 15px;
 
@@ -38,7 +38,7 @@
   text-decoration: none;
 }
 
-.btn-big{
+.my_btn_big{
   display: inline-block;
   padding:14px 35px;
 
@@ -51,16 +51,21 @@
 }
 
 
-.btn-primary{
+.my_btn_primary{
   background-color: #ef9e03;
   color:white;
   font-weight: bold;
 }
 
-.btn-secondary{
+.my_btn_secondary{
   background-color: #007166;
   color:white;
   font-weight: bold;
+}
+
+
+.my_primary_color{
+  color:#ef9e03;
 }
 
 

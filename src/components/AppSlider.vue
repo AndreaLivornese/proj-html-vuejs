@@ -73,8 +73,8 @@ export default{
             </div>
 
             <div id="about-company">
-                <a class="btn-big btn-primary" href="#">About us</a>
-                <a class="btn-big btn-secondary" href="#">Our history</a>
+                <a class="my_btn_big my_btn_primary" href="#">About us</a>
+                <a class="my_btn_big my_btn_secondary" href="#">Our history</a>
             </div>
 
         </div>
