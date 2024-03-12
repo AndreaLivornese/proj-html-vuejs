@@ -5,6 +5,7 @@ import AppNav from './components/AppNavbar.vue';
 import AppSlider from './components/AppSlider.vue';
 import AppExample from './components/AppExample.vue';
 import AppShowCase from './components/AppShowCase.vue';
+import Citation from './components/Citation.vue';
 
 export default{
 
@@ -14,6 +15,7 @@ export default{
     AppSlider,
     AppExample,
     AppShowCase,
+    Citation
   },
 
   Data(){
@@ -38,6 +40,7 @@ export default{
 
   <AppShowCase></AppShowCase>
   
+  <Citation></Citation>
 </template>
 
 <style lang="scss">
