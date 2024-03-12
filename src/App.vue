@@ -7,6 +7,7 @@ import AppExample from './components/AppExample.vue';
 import AppShowCase from './components/AppShowCase.vue';
 import Citation from './components/Citation.vue';
 import AppStats from './components/AppStats.vue';
+import TopTrading from './components/TopTrading.vue';
 
 export default{
 
@@ -17,7 +18,9 @@ export default{
     AppExample,
     AppShowCase,
     Citation,
-    AppStats
+    AppStats,
+    TopTrading
+
   },
 
   Data(){
@@ -45,6 +48,8 @@ export default{
   <Citation></Citation>
 
   <AppStats></AppStats>
+
+  <TopTrading></TopTrading>
 </template>
 
 <style lang="scss">
