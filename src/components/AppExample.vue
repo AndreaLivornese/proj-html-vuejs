@@ -24,13 +24,13 @@ export default{
         <div class="row g-0 justify-content-center ">
             <div class="col-5">
                 <h2>
-                    <spam class="my_primary_color">
+                    <span class="my_primary_color">
                         Look what
-                    </spam>
+                    </span>
                     consumer power has done with
-                    <spam class="my_primary_color">
+                    <span class="my_primary_color">
                         organic food;
-                    </spam>
+                    </span>
                     we can do the same with clothes.
                 </h2>
             </div>

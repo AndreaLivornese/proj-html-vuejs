@@ -20,9 +20,9 @@ export default{
 
 <template>
 
-    <Header>
+    <header>
 
-        <div class="container">
+        <div class="my_container">
             
             <div id="inner-header">
                 <div class="info">
@@ -47,7 +47,7 @@ export default{
 
         </div>
 
-    </Header>
+    </header>
   
 </template>
 

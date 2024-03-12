@@ -72,12 +72,12 @@ export default{
                         <img src="/public/assets/logo/logo.png" alt="logo azienda">
                     </div>
 
-                    <div class="links">
-                        <ul>
-                            <!-- fixare le icone -->
-                            <li v-for="currentLink in linksMenu" >{{ currentLink.title }}<i class="fa-solid fa-chevron-down"></i></li>
-                        </ul>
-                    </div>
+                    
+                    <ul>
+                        <!-- fixare le icone -->
+                        <li v-for="currentLink in linksMenu" >{{ currentLink.title }}<i class="fa-solid fa-chevron-down"></i></li>
+                    </ul>
+                  
                 </div>
 
                 <div id="nav-right">
@@ -99,7 +99,7 @@ export default{
   
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @use "../style/variables.scss" as *;
     @use '../style/general.scss' as *;
 
@@ -116,11 +116,25 @@ export default{
             #nav-left, #nav-right{
                 display: flex;
                 align-items: center;
+
                 
             }
 
             #nav-left{
+                align-items: center;
                 gap:65px;
+
+                ul{
+                    display: flex;
+                    gap:15px;
+    
+                    padding: 0;
+                    margin: 0;
+                    list-style-type: none;
+
+                    cursor:pointer;
+                    user-select: none;
+                }
             }
 
             #nav-right{
@@ -128,13 +142,6 @@ export default{
             }
 
 
-            .links ul{
-                display: flex;
-                gap:15px;
-
-                padding: 0;
-                list-style-type: none;
-            }
 
         }
     }

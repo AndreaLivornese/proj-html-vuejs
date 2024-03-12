@@ -1,5 +1,5 @@
 <script >
-import { registerRuntimeCompiler } from 'vue';
+
 
 
 export default{

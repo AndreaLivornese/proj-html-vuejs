@@ -4,6 +4,7 @@ import AppHeader from './components/AppHeader.vue';
 import AppNav from './components/AppNavbar.vue';
 import AppSlider from './components/AppSlider.vue';
 import AppExample from './components/AppExample.vue';
+import AppShowCase from './components/AppShowCase.vue';
 
 export default{
 
@@ -11,7 +12,8 @@ export default{
     AppHeader,
     AppNav,
     AppSlider,
-    AppExample
+    AppExample,
+    AppShowCase,
   },
 
   Data(){
@@ -33,6 +35,8 @@ export default{
   <AppSlider></AppSlider>
 
   <AppExample></AppExample>
+
+  <AppShowCase></AppShowCase>
   
 </template>
 
