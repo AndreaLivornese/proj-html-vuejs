@@ -6,6 +6,7 @@ import AppSlider from './components/AppSlider.vue';
 import AppExample from './components/AppExample.vue';
 import AppShowCase from './components/AppShowCase.vue';
 import Citation from './components/Citation.vue';
+import AppStats from './components/AppStats.vue';
 
 export default{
 
@@ -15,7 +16,8 @@ export default{
     AppSlider,
     AppExample,
     AppShowCase,
-    Citation
+    Citation,
+    AppStats
   },
 
   Data(){
@@ -41,6 +43,8 @@ export default{
   <AppShowCase></AppShowCase>
   
   <Citation></Citation>
+
+  <AppStats></AppStats>
 </template>
 
 <style lang="scss">
