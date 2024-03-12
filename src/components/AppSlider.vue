@@ -109,6 +109,11 @@ export default{
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            &>i{
+                cursor:pointer;
+                user-select: none;
+            }
         }
 
         #slider-text{
