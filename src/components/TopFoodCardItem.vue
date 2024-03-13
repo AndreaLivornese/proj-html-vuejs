@@ -28,6 +28,18 @@ export default{
 
         <div class="my_card-img">
             <img :src="food.image" alt="food image">
+
+            <div class="tools">
+                <div class="tool-wrapper">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="tool-wrapper">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="tool-wrapper">
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+            </div>
         </div>
         <div class="my_card-info">
 
@@ -79,10 +91,50 @@ export default{
 
         .my_card-img{
             margin-bottom: 35px;
+            position:relative;
 
             img{
                 width: 100%;
             }
+            
+            .tools{
+            
+            display:none;
+            justify-content: center;
+            gap:5px;
+
+            position:absolute;
+            left:0;
+            bottom:15px;
+
+            width: 100%;
+
+            color:black;
+
+            .tool-wrapper{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                width: 30px;
+                height: 30px;
+
+                border-radius: 50%;
+                
+                background-color: white;
+
+                transition: background-color .3s, color .3s;
+
+                cursor:pointer;
+
+                &:hover{
+                    background-color: $primaryColor;
+                    color:white;
+                }
+                
+            }
+        }
+            
         }
 
         .my_card-info{
@@ -109,6 +161,10 @@ export default{
         }
             
         }
+    }
+
+    .my_card:hover .tools{
+    display: flex;
     }
 
     
