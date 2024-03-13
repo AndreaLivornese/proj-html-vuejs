@@ -11,6 +11,7 @@ import TopTrading from './components/TopTrading.vue';
 import Jumbotron from './components/Jumbotron.vue';
 import News from './components/News.vue';
 import Members from "./components/Members.vue";
+import NewsLatters from "./components/NewsLatters.vue";
 
 export default{
 
@@ -25,7 +26,8 @@ export default{
     TopTrading,
     Jumbotron,
     News,
-    Members
+    Members,
+    NewsLatters
 
   },
 
@@ -62,6 +64,8 @@ export default{
   <News></News>
 
   <Members></Members>
+
+  <NewsLatters></NewsLatters>
 </template>
 
 <style lang="scss">
