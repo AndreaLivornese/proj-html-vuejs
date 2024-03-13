@@ -37,9 +37,16 @@ export default{
             <div class="name">
                 {{ food.name }}
             </div>
-            <div class="price">
-                {{ food.price }}
+
+            <div class="price-box">
+                <div class="price" :class="food.sale == true ? 'discount' : ''">
+                    ${{ food.price }}
+                </div>
+                <div v-show="food.sale == true" class="price">
+                    ${{ food.salePrice }}
+                </div>
             </div>
+
 
         </div>
 
@@ -87,11 +94,22 @@ export default{
             font-weight: bold;
         }
 
-        .price{
-            color:$primaryColor;
+        .price-box{
+            display: flex;
+            gap:5px;
+
+            .price{
+                color:$primaryColor;
+            }
+
+            .discount{
+                opacity:.5;
+            }
         }
+
         
     }
+
 }
     
 
