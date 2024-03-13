@@ -12,6 +12,7 @@ import Jumbotron from './components/Jumbotron.vue';
 import News from './components/News.vue';
 import Members from "./components/Members.vue";
 import NewsLatters from "./components/NewsLatters.vue";
+import AppFooter from './components/AppFooter.vue';
 
 export default{
 
@@ -27,7 +28,8 @@ export default{
     Jumbotron,
     News,
     Members,
-    NewsLatters
+    NewsLatters,
+    AppFooter
 
   },
 
@@ -66,6 +68,8 @@ export default{
   <Members></Members>
 
   <NewsLatters></NewsLatters>
+
+  <AppFooter></AppFooter>
 </template>
 
 <style lang="scss">

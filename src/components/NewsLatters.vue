@@ -61,6 +61,8 @@ export default{
 
         padding:26px 26px;
 
+        transform: translate(0, 50%);
+
 
         strong{
             font-size:1.5em;
