@@ -9,6 +9,7 @@ import Citation from './components/Citation.vue';
 import AppStats from './components/AppStats.vue';
 import TopTrading from './components/TopTrading.vue';
 import Jumbotron from './components/Jumbotron.vue';
+import News from './components/News.vue';
 
 export default{
 
@@ -21,7 +22,8 @@ export default{
     Citation,
     AppStats,
     TopTrading,
-    Jumbotron
+    Jumbotron,
+    News
 
   },
 
@@ -54,6 +56,8 @@ export default{
   <TopTrading></TopTrading>
 
   <Jumbotron></Jumbotron>
+
+  <News></News>
 </template>
 
 <style lang="scss">

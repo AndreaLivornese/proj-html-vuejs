@@ -87,33 +87,23 @@ export default{
 
 <style lang="scss" scoped>
     @use "../style/variables.scss" as *;
+    @use "../style/general.scss" as *;
 
 
     .my_container{
-        padding:45px 0;
+        padding:45px 0 68px;
 
         #title{
-            text-align: center;
-
-            padding-top: 20px;
-
-            margin-bottom: 30px;
-            
-            background-image: url(./public/assets/title/title-shap.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
+           @include title;
 
             #top-title{
-                color:$primaryColor;
-                font-weight: 500;
+                @include top-title;
             }
 
             h2{
-                text-transform: uppercase;
-                color:$secondaryColor;
-                font-weight: bold;
+                @include h2;
             }
+        
         }
 
         #grid{
