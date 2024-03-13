@@ -82,10 +82,10 @@ export default{
 
                 <div id="nav-right">
                     <div class="search">
-                        cerca
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                     <div class="shopping-cart">
-                        carrfello
+                        <i class="fa-solid fa-cart-shopping"></i>
                     </div>
                     <div class="order">
                         <a class="my_btn my_btn_primary">order now</a>
@@ -100,7 +100,6 @@ export default{
 </template>
 
 <style lang="scss" scoped>
-    @use "../style/variables.scss" as *;
     @use '../style/general.scss' as *;
 
 
@@ -126,7 +125,7 @@ export default{
 
                 ul{
                     display: flex;
-                    gap:15px;
+                    gap:20px;
     
                     padding: 0;
                     margin: 0;
@@ -134,11 +133,40 @@ export default{
 
                     cursor:pointer;
                     user-select: none;
+
+                    li{
+                        display: flex;
+                        align-items: center;
+                        gap:3px;
+                        
+                        i{
+                            font-size:.6em
+                        }
+                    }
                 }
             }
 
             #nav-right{
                 gap:15px;
+
+                .search{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    width: 30px;
+                    height: 30px;
+
+                    border-radius: 50%;
+
+                    text-align: center;
+                    color:white;
+                    background-color: $primaryColor;
+                }
+
+                .shopping-cart{
+                    color:$secondaryColor;
+                }
             }
 
 

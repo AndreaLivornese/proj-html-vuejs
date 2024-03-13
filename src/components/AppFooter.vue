@@ -82,10 +82,26 @@ export default{
                     </p>
 
                     <ul class="social-logo">
-                        <li><i class="fa-brands fa-facebook-f"></i>a</li>
-                        <li><i class="fa-brands fa-google-plus-g"></i>b</li>
-                        <li><i class="fa-brands fa-twitter"></i>c</li>
-                        <li><i class="fa-brands fa-pinterest-p"></i>d</li>
+                        <li>
+                            <div class="logo-wrapper">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="logo-wrapper">
+                                <i class="fa-brands fa-google-plus-g"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="logo-wrapper">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="logo-wrapper">
+                                <i class="fa-brands fa-pinterest-p"></i>
+                            </div>
+                        </li>
                     </ul>
                 </div>
 
@@ -204,6 +220,25 @@ export default{
 
                 .social-logo{
                     gap:16px;
+
+
+                    .logo-wrapper{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        width: 30px;
+                        height: 30px;
+
+                        border-radius:5px;
+
+                        background-color: $secondaryColor;
+                        color:white;
+                        font-size:.7em;
+
+                    }
+
+
                 }
             }
 

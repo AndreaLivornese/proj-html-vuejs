@@ -21,7 +21,7 @@ export default{
     <div class="citation text-center">
         <div class="img-title">
             <!-- da fixare l'icona -->
-            <i class="fa-solid fa-quote-left">""</i>
+            <i class="fa-solid fa-quote-left"></i>
         </div>
 
         <p>
