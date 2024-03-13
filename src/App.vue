@@ -10,6 +10,7 @@ import AppStats from './components/AppStats.vue';
 import TopTrading from './components/TopTrading.vue';
 import Jumbotron from './components/Jumbotron.vue';
 import News from './components/News.vue';
+import Members from "./components/Members.vue";
 
 export default{
 
@@ -23,7 +24,8 @@ export default{
     AppStats,
     TopTrading,
     Jumbotron,
-    News
+    News,
+    Members
 
   },
 
@@ -58,6 +60,8 @@ export default{
   <Jumbotron></Jumbotron>
 
   <News></News>
+
+  <Members></Members>
 </template>
 
 <style lang="scss">
