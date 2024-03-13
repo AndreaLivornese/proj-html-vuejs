@@ -235,6 +235,13 @@ export default{
                         background-color: $secondaryColor;
                         color:white;
                         font-size:.7em;
+                        cursor:pointer;
+
+                        transition: .3s;
+
+                        &:hover{
+                            background-color: $primaryColor;
+                        }
 
                     }
 

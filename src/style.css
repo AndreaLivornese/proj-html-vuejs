@@ -55,12 +55,22 @@
   background-color: #ef9e03;
   color:white;
   font-weight: bold;
+  transition: .3s;
+}
+
+.my_btn_primary:hover{
+  background-color: #007166;
 }
 
 .my_btn_secondary{
   background-color: #007166;
   color:white;
   font-weight: bold;
+  transition: .3s;
+}
+
+.my_btn_secondary:hover{
+  background-color: #ef9e03;
 }
 
 
