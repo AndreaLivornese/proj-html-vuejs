@@ -11,48 +11,57 @@ export default{
                 {
                     title:"Home",
                     subMenuLinks:[
-                        
+                        "Home", "Home", "Home"
                     ]
                 },
                 {
                     title:"Abount",
                     subMenuLinks:[
-                        
+                        "About","About","About",
                     ]
                 },
                 {
                     title:"Service",
                     subMenuLinks:[
-                        
+                        "Service","Service","Service"
                     ]
                 },
                 {
                     title:"Portfolio",
                     subMenuLinks:[
-                        
+                        "Portfolio","Portfolio","Portfolio"
                     ]
                 },
                 {
                     title:"Shop",
                     subMenuLinks:[
-                        
+                    "Shop","Shop","Shop"
                     ]
                 },
                 {
                     title:"Blog",
                     subMenuLinks:[
-                        
+                    "Blog","Blog","Blog"
                     ]
                 },
                 {
                     title:"Contact",
                     subMenuLinks:[
-                        
+                    "Contact","Contact","Contact"
                     ]
                 },
 
-            ]
+            ],
 
+            indexMenu:null,
+
+        }
+
+    },
+    methods:{
+
+        activeMenu(index){
+            this.indexMenu = index;
         }
 
     }
@@ -73,9 +82,20 @@ export default{
                     </div>
 
                     
-                    <ul>
+                    <ul class="nav-links">
                         <!-- fixare le icone -->
-                        <li v-for="currentLink in linksMenu" >{{ currentLink.title }}<i class="fa-solid fa-chevron-down"></i></li>
+                        <li v-for="(currentLink, index) in linksMenu" @click="activeMenu(index)">
+                            {{ currentLink.title }}
+                            <i class="fa-solid fa-chevron-down"></i>
+
+                            <div v-show="index == indexMenu" class="menu">
+
+                                <ul class="menu-links">
+                                    <li v-for="currentLinkMenu in currentLink.subMenuLinks">{{ currentLinkMenu }}</li>
+                                </ul>
+
+                            </div>
+                        </li>
                     </ul>
                   
                 </div>
@@ -123,24 +143,51 @@ export default{
                 align-items: center;
                 gap:65px;
 
-                ul{
+                .nav-links{
                     display: flex;
                     gap:20px;
     
                     padding: 0;
                     margin: 0;
+
                     list-style-type: none;
 
                     cursor:pointer;
                     user-select: none;
 
-                    li{
+                    &>li{
+                        position:relative;
                         display: flex;
                         align-items: center;
                         gap:3px;
                         
                         i{
                             font-size:.6em
+                        }
+
+                        .menu{
+                            width: 100px;
+                            
+                            position:absolute;
+                            left:0;
+                            bottom:-152px;
+                            z-index: 1;
+
+                            background-color: white;
+
+                            box-shadow: 0px -3px 5px #888888;
+
+                            padding:20px;
+
+                            .menu-links{
+                                padding: 0;
+                                margin: 0;
+
+                                list-style-type: none;
+
+                                line-height: 1.8em;
+                            }
+
                         }
                     }
                 }
