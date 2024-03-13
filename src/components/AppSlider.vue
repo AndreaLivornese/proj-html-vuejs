@@ -56,8 +56,8 @@ export default{
         >
 
         <div id="arrows">
-            <i class="fa-solid fa-chevron-left" @click="moveLeftImage"><</i>
-            <i class="fa-solid fa-chevron-right" @click="moveRightImge">></i>
+            <i class="fa-solid fa-chevron-left" @click="moveLeftImage"></i>
+            <i class="fa-solid fa-chevron-right" @click="moveRightImge"></i>
         </div>
 
         <div id="slider-text">
@@ -106,9 +106,13 @@ export default{
             width: 100%;
             height: 100%;
 
+            padding:0 10px;
+
             display: flex;
             justify-content: space-between;
             align-items: center;
+
+            color:white;
 
             &>i{
                 cursor:pointer;

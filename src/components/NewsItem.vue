@@ -62,12 +62,20 @@ export default{
         display: flex;
         flex-direction: column;
 
+        transition: filter .3s;
+
+        &:hover{
+            filter:brightness(50%)
+        }
+
         .news-img{
             @include mb-news; 
         
             img{
-            display: block;
-            width: 100%;
+                display: block;
+                width: 100%;
+
+                
             }
         }
 
