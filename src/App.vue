@@ -8,6 +8,7 @@ import AppShowCase from './components/AppShowCase.vue';
 import Citation from './components/Citation.vue';
 import AppStats from './components/AppStats.vue';
 import TopTrading from './components/TopTrading.vue';
+import Jumbotron from './components/Jumbotron.vue';
 
 export default{
 
@@ -19,7 +20,8 @@ export default{
     AppShowCase,
     Citation,
     AppStats,
-    TopTrading
+    TopTrading,
+    Jumbotron
 
   },
 
@@ -50,6 +52,8 @@ export default{
   <AppStats></AppStats>
 
   <TopTrading></TopTrading>
+
+  <Jumbotron></Jumbotron>
 </template>
 
 <style lang="scss">
