@@ -1,7 +1,13 @@
 <script >
 
+import AppBottomFooter from "./AppBottomFooter.vue";
+
 export default{
     name:"AppFooter",
+
+    components:{
+        AppBottomFooter
+    },
 
     data(){
         return{
@@ -61,9 +67,9 @@ export default{
 
 <template>
 
-<div class="my_container">
+<footer>
+    <div class="my_container">
 
-    <footer>
 
         <div class="row justify-content-center ">
 
@@ -130,10 +136,12 @@ export default{
 
         </div>
 
-    </footer>
-    
-    
-</div>
+        
+        
+    </div>
+</footer>
+
+<AppBottomFooter></AppBottomFooter>
     
     
 </template>
